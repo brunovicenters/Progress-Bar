@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 8rem 8rem;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    border: 2px black solid;
+    box-shadow: 0 8px 5px -2px rgba(0, 0, 0, 0.6);
+    padding: 4rem 4rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar {
+    background-color: aquamarine;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.skill {
+    width: 20%;
+    color: white;
+    background-color: brown;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.bar {
+    width: 80%;
+    padding-left: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: burlywood;
+    position: relative;
+}
+
+.progress-black {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    left: 0;
+    background-color: black;
+    z-index: 1;
+}
+
+.progress-green {
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    width: calc((100%/6)*0);
+    height: 5px;
+    left: 0;
+    background-color: green;
+    z-index: 2;
+}
+
+.check-progress {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid black;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+
+    position: relative;
+    z-index: 3;
+}
+
+.check-progress:checked {
+    background-color: green;
+}
