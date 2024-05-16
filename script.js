@@ -10,17 +10,17 @@ const progressBar = (value, skill) => {
 
   for (let checkbox of check_progress) {
     checkbox.checked = false;
+    checkbox.style.borderColor = "black";
   }
 
   for (let checkbox of check_progress) {
     if (checkbox.value <= value) {
       checkbox.checked = true;
+      checkbox.style.borderColor = "green";
     }
   }
 
   let bar_progress = document.querySelector(`.progress-${skill}`);
-
-  console.log(skills);
 
   bar_progress.style.width = `calc((100%/6)*${value})`;
 };

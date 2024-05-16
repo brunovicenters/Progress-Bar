@@ -73,7 +73,8 @@
     height: 1.5rem;
     background-color: white;
     border-radius: 50%;
-    border: 2px solid black;
+    border: 2px solid;
+    border-color: black;
     appearance: none;
     -webkit-appearance: none;
     outline: none;
