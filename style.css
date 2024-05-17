@@ -41,7 +41,6 @@
 
 .bar {
     width: 80%;
-    padding-left: 7rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,7 +60,7 @@
 .progress-green {
     position: absolute;
     transition: all 0.5s ease-in-out;
-    width: calc((100%/6)*0);
+    width: calc((100%/5)*0);
     height: 5px;
     left: 0;
     background-color: green;

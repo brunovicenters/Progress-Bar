@@ -22,5 +22,5 @@ const progressBar = (value, skill) => {
 
   let bar_progress = document.querySelector(`.progress-${skill}`);
 
-  bar_progress.style.width = `calc((100%/6)*${value})`;
+  bar_progress.style.width = `calc((100%/5)*${value - 1})`;
 };
